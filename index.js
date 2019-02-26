@@ -14,3 +14,15 @@ function takeANumber(line, newPerson) {
       return`Currently serving ${firstPerson}.`
     }
     }
+
+function currentLine(katzDeli) {
+  var list = []
+  for (var i = 0; i < katzDeli.length; i++) {
+    list.push(` `+[i+1]+`. ${katzDeli[i]}`)
+  } 
+  if (katzDeli.length === 0) {
+    return "The line is currently empty."
+  } else {
+    return "The line is currently:" + list
+      }
+  }
